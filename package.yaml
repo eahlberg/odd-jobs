@@ -39,11 +39,11 @@ extra-source-files:
 - assets/odd-jobs-color-logo.png
 
 
-ghc-options: 
-  - -Wall 
-  - -fno-warn-orphans 
-  - -fno-warn-unused-imports 
-  - -fno-warn-dodgy-exports 
+ghc-options:
+  - -Wall
+  - -fno-warn-orphans
+  - -fno-warn-unused-imports
+  - -fno-warn-dodgy-exports
   - -Werror=missing-fields
   - -Werror=incomplete-patterns
 
@@ -58,7 +58,7 @@ default-extensions:
 
 dependencies:
   - base >= 4.7 && < 5
-  - async ==2.2.4
+  - async ==2.2.4 && < 3
   - hdaemonize
   - text
   - postgresql-simple
